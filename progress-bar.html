@@ -1,0 +1,38 @@
+<html>
+    <style>
+        .bar {
+            width: 100%;
+            height: 100px;
+            background-color: grey;
+            border: black 2px solid;
+        }
+        .progress {
+            width: 10%;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+    <script>
+        var progressVal=0;
+        function buttonClick() {
+            
+            let progress = document.getElementsByClassName('progress')[0];
+            var progressInterval = setInterval(function() {
+                progressVal += 10;
+                progress.style.width = progressVal + '%';
+                progress.style.transition = 'width 0.5s ease';
+                if(progressVal >= 100) {
+                    clearInterval(progressInterval)
+                }
+            }, 500);
+
+            
+        }
+    </script>
+    <body>
+        <div class="bar">
+            <div class="progress"></div>
+        </div>
+        <button onclick="buttonClick()">Start progress</button>
+    </body>
+</html>
