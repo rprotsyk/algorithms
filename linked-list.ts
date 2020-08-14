@@ -118,14 +118,14 @@ linkedList.unshift(33);
 linkedList.unshift(55);
 linkedList.unshift(11);
 
-//console.log(linkedList.getFirst())
+console.log(linkedList.getFirst())
 //linkedList.shift();
 //linkedList.shift();
 //linkedList.shift();
 
 //linkedList.shift();
-//slinkedList.pop();
-//console.log(linkedList.getFirst());
+linkedList.pop();
+console.log(linkedList.getFirst());
 console.log(linkedList.getFirst());
 linkedList.remove(1);
 console.log(linkedList.getFirst());
